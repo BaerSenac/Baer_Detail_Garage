@@ -17,12 +17,14 @@ html {
 $backgroundPlan: #171717;
 $backgroundObjetc: #252524;
 $colorFont: #e6e4e4;
+$colorSubtitle: #ff8a00;
 $backgroundBtn: #ff8a00;
 
 //media query
 $small: 400px;
 $medio: 900px;
 
+// Header - Menu de navegacao
 header {
   background: rgba(0, 0, 0, 0.486);
   background-blend-mode: color-burn;
@@ -63,8 +65,7 @@ header {
         cursor: pointer;
       }
       .logoBaer:hover {
-        
-        animation: rotationLogo 0.7s ;
+        animation: rotationLogo 0.7s;
         animation-iteration-count: infinite;
       }
 
@@ -80,26 +81,29 @@ header {
   }
 }
 
+// Conteudo principal
 .main-page {
   .page {
     width: 100vw;
     height: 100vh;
   }
 
+  // Page Home
   .home {
     background-image: url(Img/WhatsApp\ Image\ 2022-08-18\ at\ 11.18.51.jpeg);
-    padding: 50px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+    // Opacidade do background-image
     .opacityImg {
       width: 100vw;
       height: 100vh;
       padding: 300px 0;
       background-color: #17171793;
 
+      // Conteudo
       .content {
         text-align: center;
         align-items: center;
@@ -110,7 +114,7 @@ header {
           font-size: 30px;
         }
         .content-home {
-          color: #ff8a00;
+          color: $colorSubtitle;
           font-size: 80px;
         }
 
@@ -130,12 +134,112 @@ header {
       }
     }
   }
+
+  // Page about us
   .sobre {
-    background-color: #171717;
+    background-color: $backgroundPlan;
+    height:70vh;
+    .component {
+      background-color: $backgroundObjetc;
+      width: 100vw;
+      height: 20vh;
+
+      .component-title {
+        text-align: center;
+        padding: 70px;
+
+        .title-page {
+          color: $colorFont;
+          font-size: 27px;
+          font-weight: 100;
+        }
+
+        .subtitle-page {
+          color: $colorSubtitle;
+          font-size: 40px;
+        }
+      }
+
+      .box {
+        
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        animation: fadeOut 2s;
+
+        .box-content:hover {
+          transform: scale(1.054);
+          background-color: #0a0a0a;
+        }
+        .box-content {
+          background-color: $backgroundObjetc;
+          width: 335px;
+          padding: 65px 17px;
+          margin: 20px;
+          border: none;
+
+       
+          .title-box {
+            color: $colorSubtitle;
+            font-weight: bold;
+            font-size: 25px;
+            margin: 10px;
+          }
+
+          .p-box {
+            color: $colorFont;
+            word-break: break-all;
+            justify-content: center;
+            font-weight: 100;
+            margin-bottom: 10px;
+            
+          }
+          .btn-box {
+            color: #e6e4e4; 
+            cursor: pointer;
+            
+          }
+
+          .btn-box:hover {
+            text-decoration: underline white;
+            transition: 0.5s;
+            color: $colorSubtitle;
+          }
+
+        }
+
+   
+      }
+    }
   }
+
+  .btn-page-sobre {
+    background-color: $backgroundPlan;
+    height: 20vh;
+    text-align: center;
+
+    .btn-agendar {
+      background-color: $backgroundBtn;
+          padding: 10px 60px;
+          font-size: 20px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          transition: ease-out 0.3s;
+    }
+
+    .btn-agendar:hover {
+      background-color: #e6e4e4;
+    }
+  }
+  // Page services
   .planos {
     background-color: blue;
   }
+
+  // Page contact
   .contato {
     background-color: #ff8a00;
   }

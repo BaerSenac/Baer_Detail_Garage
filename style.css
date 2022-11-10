@@ -79,7 +79,6 @@ header .navbar .logo .logoBaer:hover {
 }
 .main-page .home {
   background-image: url(Img/WhatsApp\ Image\ 2022-08-18\ at\ 11.18.51.jpeg);
-  padding: 50px 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -118,6 +117,85 @@ header .navbar .logo .logoBaer:hover {
 }
 .main-page .sobre {
   background-color: #171717;
+  height: 70vh;
+}
+.main-page .sobre .component {
+  background-color: #252524;
+  width: 100vw;
+  height: 20vh;
+}
+.main-page .sobre .component .component-title {
+  text-align: center;
+  padding: 70px;
+}
+.main-page .sobre .component .component-title .title-page {
+  color: #e6e4e4;
+  font-size: 27px;
+  font-weight: 100;
+}
+.main-page .sobre .component .component-title .subtitle-page {
+  color: #ff8a00;
+  font-size: 40px;
+}
+.main-page .sobre .component .box {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  -webkit-animation: fadeOut 2s;
+          animation: fadeOut 2s;
+}
+.main-page .sobre .component .box .box-content:hover {
+  transform: scale(1.054);
+  background-color: #0a0a0a;
+}
+.main-page .sobre .component .box .box-content {
+  background-color: #252524;
+  width: 335px;
+  padding: 65px 17px;
+  margin: 20px;
+  border: none;
+}
+.main-page .sobre .component .box .box-content .title-box {
+  color: #ff8a00;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px;
+}
+.main-page .sobre .component .box .box-content .p-box {
+  color: #e6e4e4;
+  word-break: break-all;
+  justify-content: center;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.main-page .sobre .component .box .box-content .btn-box {
+  color: #e6e4e4;
+  cursor: pointer;
+}
+.main-page .sobre .component .box .box-content .btn-box:hover {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  transition: 0.5s;
+  color: #ff8a00;
+}
+.main-page .btn-page-sobre {
+  background-color: #171717;
+  height: 20vh;
+  text-align: center;
+}
+.main-page .btn-page-sobre .btn-agendar {
+  background-color: #ff8a00;
+  padding: 10px 60px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: ease-out 0.3s;
+}
+.main-page .btn-page-sobre .btn-agendar:hover {
+  background-color: #e6e4e4;
 }
 .main-page .planos {
   background-color: blue;
