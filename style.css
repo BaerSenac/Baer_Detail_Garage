@@ -84,40 +84,45 @@ header .navbar .logo .logoBaer:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.main-page .home .opacityImg {
+.main-page .home .opacity {
   width: 100vw;
   height: 100vh;
   padding: 300px 0;
-  background-color: rgba(23, 23, 23, 0.5764705882);
+  background-color: rgba(20, 20, 20, 0.8901960784);
 }
-.main-page .home .opacityImg .content {
+.main-page .home .opacity .content {
   text-align: center;
   align-items: center;
   line-height: 80px;
+  margin-top: 50px;
 }
-.main-page .home .opacityImg .content .title-home {
+.main-page .home .opacity .content .title-home {
   color: #e6e4e4;
-  font-size: 30px;
+  font-size: 40px;
 }
-.main-page .home .opacityImg .content .content-home {
+.main-page .home .opacity .content .content-home {
   color: #ff8a00;
-  font-size: 80px;
+  font-size: 90px;
+  margin-bottom: 20px;
 }
-.main-page .home .opacityImg .content .btn {
+.main-page .home .opacity .content .btn {
   background-color: #ff8a00;
+  color: #000000;
   padding: 10px 60px;
   font-size: 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  transition: ease-out 0.3s;
+  transition: 0.2s;
+  text-transform: capitalize;
 }
-.main-page .home .opacityImg .content .btn:hover {
-  background-color: #e6e4e4;
+.main-page .home .opacity .content .btn:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 .main-page .sobre {
   background-color: #171717;
-  height: 70vh;
+  height: 100vh;
 }
 .main-page .sobre .component {
   background-color: #252524;
@@ -146,14 +151,10 @@ header .navbar .logo .logoBaer:hover {
   -webkit-animation: fadeOut 2s;
           animation: fadeOut 2s;
 }
-.main-page .sobre .component .box .box-content:hover {
-  transform: scale(1.054);
-  background-color: #0a0a0a;
-}
 .main-page .sobre .component .box .box-content {
   background-color: #252524;
-  width: 335px;
-  padding: 65px 17px;
+  width: 345px;
+  padding: 34px 17px;
   margin: 20px;
   border: none;
 }
@@ -168,38 +169,98 @@ header .navbar .logo .logoBaer:hover {
   word-break: break-all;
   justify-content: center;
   font-weight: 100;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .main-page .sobre .component .box .box-content .btn-box {
-  color: #e6e4e4;
+  border-radius: 5px;
+  background-color: #ff8a00;
+  padding: 7px 50px;
+  color: #000000;
   cursor: pointer;
+  font-size: 14px;
 }
 .main-page .sobre .component .box .box-content .btn-box:hover {
-  -webkit-text-decoration: underline white;
-          text-decoration: underline white;
-  transition: 0.5s;
-  color: #ff8a00;
+  background-color: #e6e4e4;
+  transition: 0.2s;
 }
-.main-page .btn-page-sobre {
-  background-color: #171717;
+.main-page .sobre .component .box .box-content:hover {
+  transform: scale(1.054);
+  background-color: #0a0a0a;
+}
+.main-page .combos {
+  background-color: #e6e4e4;
+}
+.main-page .combos .component {
+  background-color: #252524;
+  width: 100vw;
   height: 20vh;
-  text-align: center;
 }
-.main-page .btn-page-sobre .btn-agendar {
+.main-page .combos .component .component-title {
+  text-align: center;
+  padding: 70px;
+}
+.main-page .combos .component .component-title .title-page {
+  color: #e6e4e4;
+  font-size: 27px;
+  font-weight: 100;
+}
+.main-page .combos .component .component-title .subtitle-page {
+  color: #ff8a00;
+  font-size: 40px;
+}
+.main-page .combos .card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 80px;
+}
+.main-page .combos .card-container .img-combo {
+  width: 450px;
+  height: 500px;
+}
+.main-page .combos .card-container .title-combo {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.main-page .combos .card-container .text-combo {
+  font-size: 20px;
+}
+.main-page .combos .card-container .list-combo {
+  font-size: 18px;
+}
+.main-page .combos .card-container .btn {
   background-color: #ff8a00;
+  color: #000000;
   padding: 10px 60px;
   font-size: 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  transition: ease-out 0.3s;
+  transition: 0.2s;
+  text-transform: capitalize;
+  margin-top: 30px;
 }
-.main-page .btn-page-sobre .btn-agendar:hover {
-  background-color: #e6e4e4;
+.main-page .combos .card-container .btn:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
-.main-page .planos {
-  background-color: blue;
+.main-page .card-container-m {
+  width: 100vw;
+  height: 80vh;
+  background-color: cyan;
+  text-align: center;
+  display: flex;
+}
+.main-page .card-container-m .page-content {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.main-page .card-container-m .page-content .img-card {
+  width: 450px;
+  height: 500px;
 }
 .main-page .contato {
-  background-color: #ff8a00;
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */

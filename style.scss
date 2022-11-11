@@ -82,12 +82,86 @@ header {
 }
 
 // Conteudo principal
+@mixin component {
+  .component {
+    background-color: $backgroundObjetc;
+    width: 100vw;
+    height: 20vh;
+    .component-title {
+      text-align: center;
+      padding: 70px;
+
+      .title-page {
+        color: $colorFont;
+        font-size: 27px;
+        font-weight: 100;
+      }
+
+      .subtitle-page {
+        color: $colorSubtitle;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@mixin btn {
+  .btn {
+    background-color: $backgroundBtn;
+    color: #000000;
+    padding: 10px 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: capitalize;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+}
 .main-page {
   .page {
     width: 100vw;
     height: 100vh;
   }
 
+  @mixin page {
+    .card-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+
+      .img-combo {
+        width: 450px;
+        height: 500px;
+      }
+
+      .title-combo {
+        font-size: 50px;
+        margin-bottom: 40px;
+      }
+      .text-combo {
+        font-size: 20px;
+      }
+      .list-combo {
+        font-size: 18px;
+      }
+      @include btn();
+    }
+    .card-container:nth-child(2) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row-reverse;
+     
+    }
+  }
   // Page Home
   .home {
     background-image: url(Img/WhatsApp\ Image\ 2022-08-18\ at\ 11.18.51.jpeg);
@@ -97,39 +171,44 @@ header {
     background-attachment: fixed;
 
     // Opacidade do background-image
-    .opacityImg {
+    .opacity {
       width: 100vw;
       height: 100vh;
       padding: 300px 0;
-      background-color: #17171793;
+      background-color: #141414e3;
 
       // Conteudo
       .content {
         text-align: center;
         align-items: center;
         line-height: 80px;
+        margin-top: 50px;
 
         .title-home {
           color: $colorFont;
-          font-size: 30px;
+          font-size: 40px;
         }
         .content-home {
           color: $colorSubtitle;
-          font-size: 80px;
+          font-size: 90px;
+          margin-bottom: 20px;
         }
 
         .btn {
           background-color: $backgroundBtn;
+          color: #000000;
           padding: 10px 60px;
           font-size: 20px;
           border-radius: 5px;
           border: none;
           cursor: pointer;
-          transition: ease-out 0.3s;
-        }
+          transition: 0.2s;
+          text-transform: capitalize;
 
-        .btn:hover {
-          background-color: #e6e4e4;
+          &:hover {
+            background-color: #000000;
+            color: #ffffff;
+          }
         }
       }
     }
@@ -138,7 +217,8 @@ header {
   // Page about us
   .sobre {
     background-color: $backgroundPlan;
-    height:70vh;
+    height: 100vh;
+    // Componentes da box
     .component {
       background-color: $backgroundObjetc;
       width: 100vw;
@@ -161,7 +241,6 @@ header {
       }
 
       .box {
-        
         display: flex;
         text-align: center;
         justify-content: center;
@@ -169,18 +248,13 @@ header {
         margin-top: 60px;
         animation: fadeOut 2s;
 
-        .box-content:hover {
-          transform: scale(1.054);
-          background-color: #0a0a0a;
-        }
         .box-content {
           background-color: $backgroundObjetc;
-          width: 335px;
-          padding: 65px 17px;
+          width: 345px;
+          padding: 34px 17px;
           margin: 20px;
           border: none;
 
-       
           .title-box {
             color: $colorSubtitle;
             font-weight: bold;
@@ -193,54 +267,84 @@ header {
             word-break: break-all;
             justify-content: center;
             font-weight: 100;
-            margin-bottom: 10px;
-            
+            margin-bottom: 16px;
           }
           .btn-box {
-            color: #e6e4e4; 
+            border-radius: 5px;
+            background-color: #ff8a00;
+            padding: 7px 50px;
+            color: #000000;
             cursor: pointer;
-            
+            font-size: 14px;
           }
 
           .btn-box:hover {
-            text-decoration: underline white;
-            transition: 0.5s;
-            color: $colorSubtitle;
+            background-color: #e6e4e4;
+            transition: 0.2s;
           }
-
         }
-
-   
+        .box-content:hover {
+          transform: scale(1.054);
+          background-color: #0a0a0a;
+        }
       }
     }
   }
 
-  .btn-page-sobre {
-    background-color: $backgroundPlan;
-    height: 20vh;
-    text-align: center;
-
-    .btn-agendar {
-      background-color: $backgroundBtn;
-          padding: 10px 60px;
-          font-size: 20px;
-          border-radius: 5px;
-          border: none;
-          cursor: pointer;
-          transition: ease-out 0.3s;
-    }
-
-    .btn-agendar:hover {
-      background-color: #e6e4e4;
-    }
-  }
   // Page services
-  .planos {
-    background-color: blue;
+  .combos {
+    @include component;
+    background-color: $colorFont;
+    
+    .card-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-top: 80px;
+
+      .img-combo {
+        width: 450px;
+        height: 500px;
+      }
+
+      .title-combo {
+        font-size: 50px;
+        margin-bottom: 40px;
+      }
+      .text-combo {
+        font-size: 20px;
+      }
+      .list-combo {
+        font-size: 18px;
+      }
+      @include btn();
+    }
+
+    
+  }
+
+  .card-container-m {
+    width: 100vw;
+    height: 80vh;
+    background-color: cyan;
+    text-align: center;
+    display: flex;
+
+    .page-content {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      .img-card {
+        width: 450px;
+        height: 500px;
+      }
+    }
+    
   }
 
   // Page contact
   .contato {
-    background-color: #ff8a00;
+    background-color: red;
   }
 }
