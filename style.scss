@@ -36,7 +36,7 @@ header {
   .navbar {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1%;
+    height: 9vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -48,7 +48,7 @@ header {
 
     .menu a {
       color: $colorFont;
-      font-size: 17px;
+      font-size: 15px;
       text-decoration: none;
       margin-right: 50px;
       font-weight: 400;
@@ -61,7 +61,7 @@ header {
 
     .logo {
       .logoBaer {
-        width: 120px;
+        width: 90px;
         cursor: pointer;
       }
       .logoBaer:hover {
@@ -124,44 +124,31 @@ header {
     }
   }
 }
+@mixin btn2 {
+  .btn {
+    background-color: $backgroundBtn;
+    color: #000000;
+    padding: 10px 60px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #0a0a0a;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: capitalize;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+}
 .main-page {
   .page {
     width: 100vw;
     height: 100vh;
   }
 
-  @mixin page {
-    .card-container {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-direction: row;
-
-      .img-combo {
-        width: 450px;
-        height: 500px;
-      }
-
-      .title-combo {
-        font-size: 50px;
-        margin-bottom: 40px;
-      }
-      .text-combo {
-        font-size: 20px;
-      }
-      .list-combo {
-        font-size: 18px;
-      }
-      @include btn();
-    }
-    .card-container:nth-child(2) {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-direction: row-reverse;
-     
-    }
-  }
   // Page Home
   .home {
     background-image: url(Img/WhatsApp\ Image\ 2022-08-18\ at\ 11.18.51.jpeg);
@@ -301,7 +288,7 @@ header {
       justify-content: space-evenly;
       align-items: center;
       flex-direction: row-reverse;
-      margin-top: 80px;
+      height: 80vh;
 
       .img-combo {
         width: 450px;
@@ -320,31 +307,90 @@ header {
       }
       @include btn();
     }
-
-    
-  }
-
-  .card-container-m {
-    width: 100vw;
-    height: 80vh;
-    background-color: cyan;
-    text-align: center;
-    display: flex;
-
-    .page-content {
+    .card-container:nth-child(2) {
       display: flex;
+      justify-content: space-evenly;
       align-items: center;
-      justify-items: center;
-      .img-card {
+      flex-direction: row-reverse;
+      background-color: $colorFont;
+
+      .img-combo {
         width: 450px;
         height: 500px;
       }
-    }
+
+      .title-combo {
+        font-size: 70px;
+        margin-bottom: 40px;
+      }
+      .text-combo {
+        font-size: 40px;
+      }
+      .list-combo {
+        font-size: 18px;
+      }
+
     
+
+      @include btn();
+    }
+    .card-container:nth-child(3) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      background-color: $backgroundBtn;
+
+      .img-combo {
+        width: 450px;
+        height: 500px;
+      }
+
+      .title-combo {
+        font-size: 70px;
+        margin-bottom: 40px;
+      }
+      .text-combo {
+        font-size: 20px;
+      }
+      .list-combo {
+        font-size: 18px;
+      }
+      @include btn2();
+    }
+    .card-container:nth-child(4) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row-reverse;
+      background-color: #0a0a0a;
+
+      .img-combo {
+        width: 450px;
+        height: 500px;
+      }
+
+      .title-combo {
+        font-size: 50px;
+        margin-bottom: 40px;
+        color: #e6e4e4;
+      }
+      .text-combo {
+        font-size: 20px;
+        color: #e6e4e4;
+      }
+      .list-combo {
+        font-size: 18px;
+        color: #e6e4e4;
+
+      }
+      
+      @include btn();
+    }
   }
 
   // Page contact
   .contato {
-    background-color: red;
+    background-color: $backgroundBtn;
   }
 }
