@@ -1,0 +1,43 @@
+@use 'variables'
+
+@mixin btn 
+  background: variables.$fundo
+  font-size: 1.3rem
+  color: variables.$yellow
+  border: 1px groove variables.$yellow
+  padding: 15px 40px
+  margin-top: 20px
+  font-weight: 400 
+  display: flex
+  gap: 6px
+  
+
+@mixin page
+  
+  height: 101vh
+
+@mixin flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin bg-img($img)
+  background-image: url('../Img/#{$img}')
+  background-position: center
+  background-size: 100%
+  filter: contrast(50%) brightness(15%)
+  background-repeat: no-repeat
+  
+@mixin container
+  display: flex
+  flex-direction: column
+  align-items: center
+  
+@mixin title
+  display: flex
+  flex-direction: column
+  align-items: center
+  background: variables.$fundo-card
+  width: 100%
+  padding: 60px
+  

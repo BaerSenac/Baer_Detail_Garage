@@ -1,242 +1,171 @@
 <!DOCTYPE html>
-<html lang="BR">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Baer Detail Garage</title>
   </head>
   <body>
-    <!-- menu de navegacao -->
-    <header class="header">
+    <header class="header" ><!-- header -->
       <div class="navbar">
         <div class="menu">
+          <a href="#home">home</a>
+          <a href="#sobre">Sobre</a>
           <a href="#services">Serviços</a>
-          <a href="#combos">Combos</a>
+          <a href="#">Combos</a>
           <a href="#">Contato</a>
         </div>
-        <div class="logo">
-          <img class="logoBaer" src="Img/LOGOBaer.png" alt="logo" />
-        </div>
       </div>
-    </header>
-    
-    
-    <!-- main page -->
-    <main class="main-page">
-      <!-- Page principal -->
-      <article class="home page" id="home">
-        <!-- cobertura do background -->
-        <div class="opacity">
-          <div class="content">
-            <h3 class="title-home">Baer Detail Garage</h3>
-            <h1 class="content-home">Estética Automotiva</h1>
-            <button class="btn">let's together</button>
+    </header><!-- header -->
+
+    <main class="main" >
+      <section class="home" id="home"><!-- section home -->
+        <div class="home-img"></div>
+        <div class="home-flex" >
+          <div class="home-content" data-aos="fade-left">
+            <h2 class="home-subtitle">Estética Automotiva</h2>
+            <h1 class="home-title">Baer Detail Garage</h1>
+            
+            <button class="home-btn">Explore <span class="material-symbols-outlined">
+              arrow_right_alt
+              </span></button>
           </div>
+          <div class="img" data-aos="fade-right">
+            <img class="logoBaer" src="Img/LogoBaer.svg" alt="logo" />
+          </div>  
         </div>
-      </article>
+      </section><!-- section home -->
       
-      
-      
-      
-      <!-- Page about us -->
-      <article class="sobre page" id="services">
-        <div class="component">
-          <div class="component-title">
-            <h3 class="title-page">Escolha um</h3>
-            <h1 class="subtitle-page">Serviço Individual</h1>
+      <section class="sobre" id="sobre"><!-- section about -->
+        <div class="sobre-content" ><!-- content about -->
+          <div class="sobre-img" data-aos="fade-right"> <!-- img -->
+            <img src="Img/baerGarage.png" alt="baer" >
+          </div><!-- img -->
+          <div class="sobre-text" data-aos="fade-left"><!-- sobre text -->
+            <h1>Quem somos</h1>
+            <h2>O que é o Baer Detail Garage</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos alias asperiores earum ea cum ab sed voluptatum! Eum inventore sunt tempore architecto voluptatem distinctio eaque adipisci enim numquam illo?</p>
+            <button class="sobre-btn">Saiba mais</button>
+          </div><!-- sobre text -->
           </div>
-          <!-- box -->
-          <div class="box">
-            <!-- Polimento -->
-            <div class="box-content" data-aos="fade-up">
-              <h1 class="title-box">Polimento</h1>
-              <p class="p-box">
-                Polimento é o processo por meio de abrasão, removendo uma
-                pequena camada do verniz que está danificada
-              </p>
-              <a class="btn-box"
-                >Saiba mais
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <!-- Higienizacao -->
-            <div class="box-content" data-aos="fade-up">
-              <h1 class="title-box">Higienização</h1>
-              <p class="p-box">
-                Polimento é o processo por meio de abrasão, removendo uma
-                pequena camada do verniz que está danificada
-              </p>
-              <a class="btn-box"
-                >Saiba mais
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <!-- Vitrificacao -->
-            <div class="box-content" data-aos="fade-up">
-              <h1 class="title-box">Vitrificação</h1>
-              <p class="p-box">
-                Polimento é o processo por meio de abrasão, removendo uma
-                pequena camada do verniz que está danificada
-              </p>
-              <a class="btn-box"
-                >Saiba mais
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <!-- Cristalização dos Vidros -->
-            <div class="box-content" data-aos="fade-up">
-              <h1 class="title-box">Cristalização dos Vidros</h1>
-              <p class="p-box">
-                Polimento é o processo por meio de abrasão, removendo uma
-                pequena camada do verniz que está danificada
-              </p>
-              <a class="btn-box"
-                >Saiba mais
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <!-- Limpeza técnica -->
-            <div class="box-content" data-aos="fade-up">
-              <h1 class="title-box">Limpeza Técnica</h1>
-              <p class="p-box">
-                Polimento é o processo por meio de abrasão, removendo uma
-                pequena camada do verniz que está danificada
-              </p>
-              <a class="btn-box"
-                >Saiba mais
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <!-- Restauração de Rodas-->
-            <div class="box-content" data-aos="fade-up">
-              <h1 class="title-box">Restauração de Rodas</h1>
-              <p class="p-box">
-                Polimento é o processo por meio de abrasão, removendo uma
-                pequena camada do verniz que está danificada
-              </p>
-              <a class="btn-box"
-                >Saiba mais
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <!-- Restauração dos Plásticos -->
-            <div class="box-content" data-aos="fade-up">
-              <h1 class="title-box">Restauração dos Plásticos</h1>
-              <p class="p-box">
-                Polimento é o processo por meio de abrasão, removendo uma
-                pequena camada do verniz que está danificada
-              </p>
-              <a class="btn-box"
-                >Saiba mais
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-            <!-- Restauração dos Faróis -->
-            <div class="box-content" data-aos="fade-up">
-              <h1 class="title-box">Restauração dos Faróis</h1>
-              <p class="p-box">
-                Polimento é o processo por meio de abrasão, removendo uma
-                pequena camada do verniz que está danificada
-              </p>
-              <a class="btn-box"
-                >Saiba mais
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </article>
+        </div><!-- content about -->
+      </section><!-- section about -->
 
-      <!-- Page services -->
-      
-      <article class="combos page" id="combos">
-        <div class="component">
-          <!-- cabecalho  -->
-          <div class="component-title">
-            <h3 class="title-page">Também temos</h3>
-            <h1 class="subtitle-page">Combos</h1>
+      <section class="services" id="services">
+        <div class="services-container" >
+          <div class="services-title">
+            <h1>Principais</h1>
+            <h2>Serviços</h2>
           </div>
-          <!-- Combo easy -->
-          <div class="card-container">
-            <div class="card">
-              <img
-                class="img-combo"
-                src="Img/WhatsApp Image 2022-08-18 at 11.18.51.jpeg"
-                alt=""
-              />
+          <div class="services-cards" >
+            
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
             </div>
-            <div class="content-card">
-              <h1 class="title-combo">Easy Detail</h1>
-              <p class="text-combo">Combo básico mas eficiente</p>
-              <li class="list-combo">Limpeza Técnica</li>
-              <li class="list-combo">Aplicação Cera Líquida </li>
-              
-              
-              <button class="btn">Agendar</button>
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+              <div class="card-text">
+                <h1>titulo card</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat itaque ipsum </p>
+                <a>Saiba mais</a>
+              </div>
+              <div class="card-img">
+                <img src="Img/img1.jpeg" alt="x">
+              </div>
+            </div>
+            
             </div>
           </div>
-          <!-- combo medium -->
-          <div class="card-container page">
-            <div class="card">
-              <img
-                class="img-combo"
-                src="Img/WhatsApp Image 2022-08-18 at 11.18.51.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="content-card">
-              <h1 class="title-combo">Easy Detail</h1>
-              <p class="text-combo">Combo básico mas eficiente</p>
-              <li class="list-combo">Limpeza</li>
-              <li class="list-combo">Limpeza</li>
-              <li class="list-combo">Limpeza</li>
-              <li class="list-combo">Limpeza</li>
-              <button class="btn">Agendar</button>
-            </div>
-          </div>
-          <!-- combo full -->
-          <div class="card-container page">
-            <div class="card">
-              <img
-                class="img-combo"
-                src="Img/WhatsApp Image 2022-08-18 at 11.18.51.jpeg"
-                alt=""
-              />
-            </div>
-            <div class="content-card">
-              <h1 class="title-combo">Easy Detail</h1>
-              <p class="text-combo">Combo básico mas eficiente</p>
-              <li class="list-combo">Limpeza</li>
-              <li class="list-combo">Limpeza</li>
-              <li class="list-combo">Limpeza</li>
-              <li class="list-combo">Limpeza</li>
-              <button class="btn">Agendar</button>
-            </div>
-          </div>
-        </div> <!--fim component8-->
-      </article>
-
-
-      <!-- Page contact -->
-      <!-- <section class="contato page">
-        <div class="component">
           
         </div>
-      </section> -->
+      </section>
     </main>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 1000,
-        easing: "all",
+        duration:900,
+        easing: "all"
       });
     </script>
-    <script
-      src="https://kit.fontawesome.com/1910d1b4ce.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

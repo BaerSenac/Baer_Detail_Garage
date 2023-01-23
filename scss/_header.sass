@@ -1,0 +1,41 @@
+@use 'variables'
+@use 'mixins'
+@use 'fonts'
+
+header 
+  background: variables.$black
+  position: fixed
+  width: 100vw
+  z-index: 1000
+  
+  .navbar 
+
+    height: 6vh
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    text-align: center
+    backdrop-filter: blur(10px)
+    justify-content: center
+    .menu 
+      width: 100%
+      a
+        color: variables.$white
+        font-size: .9rem
+        text-transform: uppercase
+        text-decoration: none
+        margin-right: 40px
+        font-weight: 400
+        transition: 0.4s
+        &:hover 
+          color: variables.$yellow
+          
+
+    
+      
+
+
+        
+      
+    
+  

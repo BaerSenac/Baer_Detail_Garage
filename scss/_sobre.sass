@@ -1,0 +1,81 @@
+@use 'variables'
+@use 'mixins'
+@use 'keyframes'
+
+.sobre
+  @include mixins.page
+  display: flex
+  align-items: center 
+  justify-content: center
+  background: variables.$fundo
+  .sobre-content
+    display: grid
+    grid-template-columns: 1fr 1fr
+    justify-items: end
+    align-items: center
+    gap: 5rem
+   
+    .sobre-img
+      overflow: hidden
+      border-radius: 5px
+      img
+        width: 23vw
+        border-radius: 5px
+        filter: saturate(105%) brightness(100%)
+        max-width: 100%
+        -moz-transition: all 0.3s
+        -webkit-transition: all 0.3s
+        transition: all 0.3s
+        &:hover
+          -moz-transform: scale(1.1)
+          -webkit-transform: scale(1.1)
+          transform: scale(1.1)
+        
+
+    .sobre-text
+      max-width: 30vw 
+
+      h1
+        color: variables.$white
+        font-size: 3rem
+        line-height: 4rem
+      h2
+        color: variables.$white
+        font-size: 1.8rem
+        font-weight: 500
+        line-height: 3rem
+
+      p 
+        color: variables.$white
+        
+        font-size: 1rem
+        font-weight: 300
+
+      .sobre-btn
+        @include mixins.btn
+        background: variables.$yellow
+        color: variables.$black
+        cursor: pointer
+        &:hover
+          background: variables.$fundo-card
+          color: variables.$yellow
+          
+        
+        
+    
+     
+        
+        
+    
+      
+
+
+          
+        
+        
+        
+      
+    
+    
+  
+  
