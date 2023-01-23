@@ -1,0 +1,40 @@
+@use 'variables'
+@use 'mixins'
+@use 'keyframes'
+
+
+.after-before
+    background: variables.$fundo-card
+    height: 80vh
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 10rem
+    .after-content
+        h1
+            color: variables.$yellow
+            font-size: 2rem
+        p
+            color: variables.$white
+            font-size: 1.2rem
+            font-weight: 200
+            width: 500px
+            max-width: 500px
+
+        a
+            color: white
+    .antesDepois
+        position: relative
+        width: 400px
+        max-width: 400px 
+        cursor: col-resize 
+        img
+            max-width: 100% 
+        .depois
+            position: absolute
+            top: 0
+            left: 0
+            width: 45%
+            height: 99.5%
+            background-size: cover
+            border-right: 1px solid #fff 
