@@ -145,7 +145,7 @@ header .navbar .menu a:hover {
           animation: arrow 0.5s forwards ease;
 }
 .home .home-flex .img .logoBaer {
-  min-width: 300px;
+  width: 350px;
 }
 
 .sobre {
