@@ -114,6 +114,10 @@ header .navbar .menu a:hover {
   font-weight: 500;
   color: #e6e4e4;
 }
+.home .home-flex .home-content p {
+  color: #a8a8a8;
+  font-size: 2rem;
+}
 .home .home-flex .home-content .home-subtitle {
   font-size: 4rem;
   font-weight: 700;
