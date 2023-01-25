@@ -3,22 +3,23 @@
 @use 'fonts'
 
 header 
-  background: variables.$black
+  background: variables.$fundo-header
+  backdrop-filter: blur(10px)
   position: fixed
   width: 100vw
   z-index: 1000
   
   .navbar 
-
+    
     height: 6vh
     display: flex
     flex-wrap: wrap
     align-items: center
     text-align: center
-    backdrop-filter: blur(10px)
     justify-content: center
     .menu 
       width: 100%
+      
       a
         color: variables.$white
         font-size: .9rem

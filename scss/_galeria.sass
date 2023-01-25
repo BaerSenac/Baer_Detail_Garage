@@ -3,18 +3,18 @@
 @use 'keyframes'
 
 .galeria
-    
+    height: 130vh
     .galeria-container
         background: variables.$fundo
         display: flex
         align-items: center
-        height: 100vh
+        
         flex-direction: column
         justify-content: center
         @include mixins.page
         filter: none
         .galeria-title
-            margin-bottom: 6rem
+            margin-top: 1rem
             @include mixins.title
             h1
                 font-size: 3rem
@@ -22,13 +22,14 @@
 
         .galeria-img
             display: grid
-            grid-template-columns:  0fr 0fr 0fr 0fr 0fr
+            grid-template-columns:  1fr 1fr 1fr 1fr 1fr
             justify-content: center
             grid-gap: 10px
             align-items: center
-            
-            .image
-                max-width: 220px
+            overflow: hidden
+            img
+                max-width: 300px
+                border-radius: 5px
                 -moz-transition: all 0.3s
                 -webkit-transition: all 0.3s
                 transition: all 0.3s
@@ -36,4 +37,5 @@
                     -moz-transform: scale(1.1)
                     -webkit-transform: scale(1.1)
                     
-                    
+  
+                
