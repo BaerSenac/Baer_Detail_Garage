@@ -31,19 +31,19 @@
   }
 }
 @-webkit-keyframes arrow {
-  from {
-    left: 0;
+  0% {
+    transform: translateX(0px);
   }
-  to {
-    left: 5px;
+  100% {
+    transform: translateX(7px);
   }
 }
 @keyframes arrow {
-  from {
-    left: 0;
+  0% {
+    transform: translateX(0px);
   }
-  to {
-    left: 5px;
+  100% {
+    transform: translateX(7px);
   }
 }
 header {
@@ -146,8 +146,8 @@ header .navbar .menu a:hover {
 }
 .home .home-flex .home-content .home-btn:hover span {
   position: relative;
-  -webkit-animation: arrow 0.5s forwards ease;
-          animation: arrow 0.5s forwards ease;
+  -webkit-animation: arrow 0.4s forwards ease;
+          animation: arrow 0.4s forwards ease;
 }
 .home .home-flex .img .logoBaer {
   width: 350px;
@@ -313,6 +313,13 @@ header .navbar .menu a:hover {
   align-items: center;
   gap: 10rem;
 }
+.after-before .after-content {
+  gap: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
 .after-before .after-content h1 {
   color: #ff8a00;
   font-size: 2rem;
@@ -324,14 +331,25 @@ header .navbar .menu a:hover {
   width: 500px;
   max-width: 500px;
 }
-.after-before .after-content a {
-  color: white;
+.after-before .after-content span {
+  display: inline-flex;
+  color: #ff8a00;
+  gap: 30px;
+}
+.after-before .after-content span i {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #e6e4e4;
+  color: #080808;
+  font-size: 2.5rem;
+  -webkit-animation: arrow 1s infinite;
+          animation: arrow 1s infinite;
 }
 .after-before .antesDepois {
   position: relative;
   width: 400px;
   max-width: 400px;
-  cursor: col-resize;
+  cursor: -webkit-grab;
+  cursor: grab;
   border-radius: 5px;
 }
 .after-before .antesDepois img {
@@ -378,22 +396,23 @@ header .navbar .menu a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
-  grid-gap: 10px;
+  grid-gap: 5px;
   align-items: center;
-  overflow: hidden;
 }
 .galeria .galeria-container .galeria-img img {
-  max-width: 300px;
+  width: 300px;
+  height: 330px;
   border-radius: 5px;
   transition: all 0.3s;
 }
 .galeria .galeria-container .galeria-img img:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.011);
+  -webkit-transform: scale(1.021);
 }
 
 .contato .contato-container {
   height: 100vh;
+  height: 90vh;
   background: #ff8a00;
   display: flex;
   justify-content: center;
@@ -477,4 +496,15 @@ html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
 
 main {
   justify-content: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+.footer .footer-link {
+  color: #9b9a9a;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

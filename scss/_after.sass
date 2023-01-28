@@ -11,6 +11,11 @@
     align-items: center
     gap: 10rem
     .after-content
+        gap: 21px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: space-around
         h1
             color: variables.$yellow
             font-size: 2rem
@@ -21,13 +26,24 @@
             width: 500px
             max-width: 500px
 
-        a
-            color: white
+        span
+            display: inline-flex
+            color: variables.$yellow
+            gap: 30px
+            i
+                -webkit-text-stroke: 1px 
+                -webkit-text-stroke-color: variables.$white
+                color: variables.$fundo
+                font-size: 2.5rem
+                animation: arrow 1s infinite
+            
+            
+
     .antesDepois
         position: relative
         width: 400px
         max-width: 400px 
-        cursor: col-resize 
+        cursor: grab 
         border-radius: 5px
         img
             max-width: 100% 

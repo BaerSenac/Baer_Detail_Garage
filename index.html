@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="scss/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="Img/logoBaer.svg"/>
+    <link rel="icon" type="image/png" href="Img/logoBaer.svg" sizes="16x16"/>
     <script src="https://kit.fontawesome.com/1910d1b4ce.js" crossorigin="anonymous"></script>
     <title>Baer Detail Garage</title>
-    <script src="showDiv.js" defer></script>
+
   </head>
   <body>
     <header class="header" ><!-- header -->
@@ -164,12 +164,14 @@
           </div><!-- services container -->
         </div>
         <section class="after-before">
-          <div class="after-content">
-            <h1>Antes de Depois</h1>
+          <div class="after-content" data-aos="fade-right">
+            <h1>Antes e Depois</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ab quisquam dolor ex commodi velit et molestias qui cupiditate incidunt, consequatur ratione nisi delectus nesciunt perspiciatis soluta provident. Neque, odio.</p>
-            <a href="#"><i class="fa-solid fa-circle-dashed"></i></a>
+            <span>Passe o mouse na imagem para revelar o antes e depois<i class="fa-solid fa-hand"></i></span>
           </div>
-          <div class="antesDepois" >
+          
+          <div class="antesDepois" data-aos="fade-left">
+             
             <img src="Img/img1.jpeg" alt="imagem 1" class="antes">
             <div class="depois" data-src="Img/img2.jpeg"></div>
           </div>
@@ -185,34 +187,34 @@
           </div>
           <div class="galeria-img" >
             <a data-fslightbox="gallery" href="Img/img1.jpeg" >
-              <img  src="Img/img1.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/img1.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/img2.jpeg" >
-              <img  src="Img/img2.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/img2.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/img1.jpeg" >
-              <img  src="Img/img1.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/img1.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/img2.jpeg" >
-              <img  src="Img/img2.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/img2.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/img1.jpeg" >
-              <img  src="Img/img1.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/img1.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/bk.jpeg" >
-              <img  src="Img/bk.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/bk.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/img1.jpeg" >
-              <img  src="Img/img1.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/img1.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/bk.jpeg" >
-              <img  src="Img/bk.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/bk.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/bk.jpeg" >
-              <img  src="Img/bk.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/bk.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             <a data-fslightbox="gallery" href="Img/bk.jpeg" >
-              <img  src="Img/bk.jpeg" alt="img" data-aos="flip-left" class="image" >
+              <img  src="Img/bk.jpeg" alt="img" data-aos="fade-up" class="image" >
             </a>
             
             
@@ -246,6 +248,9 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <a href="https://baersenac.github.io/newPortfolio/" class="footer-link">Desenvolvido by &copy;Baer</a>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
