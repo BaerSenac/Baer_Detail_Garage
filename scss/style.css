@@ -54,7 +54,7 @@ header {
   width: 100vw;
   z-index: 1000;
 }
-header .navbar {
+header .menu {
   height: 6vh;
   display: flex;
   flex-wrap: wrap;
@@ -62,10 +62,26 @@ header .navbar {
   text-align: center;
   justify-content: center;
 }
-header .navbar .menu {
+header .menu .navbar {
   width: 100%;
+  display: block;
 }
-header .navbar .menu a {
+@media (min-width: 375px) and (max-width: 480px) {
+  header .menu .navbar {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  header .menu .navbar {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 900px) {
+  header .menu .navbar {
+    display: none;
+  }
+}
+header .menu .navbar a {
   color: #e6e4e4;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -74,7 +90,35 @@ header .navbar .menu a {
   font-weight: 400;
   transition: 0.4s;
 }
-header .navbar .menu a:hover {
+header .menu .navbar a:hover {
+  color: #ff8a00;
+}
+header .menu .hamburger {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 10vw;
+  display: none;
+}
+@media (min-width: 375px) and (max-width: 480px) {
+  header .menu .hamburger {
+    display: block;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  header .menu .hamburger {
+    display: block;
+  }
+}
+@media (min-width: 769px) and (max-width: 900px) {
+  header .menu .hamburger {
+    display: block;
+  }
+}
+header .menu .hamburger:hover {
   color: #ff8a00;
 }
 

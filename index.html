@@ -14,15 +14,20 @@
   </head>
   <body>
     <header class="header" ><!-- header -->
-      <div class="navbar">
-        <div class="menu">
+      <div class="menu">
+        <nav class="navbar" id="navbar">
           <a href="#home">home</a>
           <a href="#sobre">Sobre</a>
           <a href="#services">Serviços</a>
           <a href="#galery">Galeria</a>
           <a href="#contato">Contato</a>
-        </div>
+          
+        </nav>
+        <button class="hamburger" onclick="clickMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
+      
     </header><!-- header -->
 
     <main class="main" >
@@ -261,6 +266,15 @@
     
   <script src="fslightbox.js"></script>
   <script src="antesEDepois.js"></script>
+  <script>
+    function clickMenu() {
+      if (navbar.style.display == 'block') {
+        navbar.style.display = 'none'
+      } else {
+        navbar.style.display = 'block'
+      }
+    }
+  </script>
   
   </body>
 </html>

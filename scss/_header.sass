@@ -9,7 +9,7 @@ header
   width: 100vw
   z-index: 1000
   
-  .navbar 
+  .menu 
     
     height: 6vh
     display: flex
@@ -17,8 +17,16 @@ header
     align-items: center
     text-align: center
     justify-content: center
-    .menu 
+    
+    .navbar 
       width: 100%
+      display: block
+      @include mixins.mobile
+        display: none
+      @include mixins.tablet
+        display: none
+      @include mixins.laptop
+        display: none
       
       a
         color: variables.$white
@@ -31,9 +39,24 @@ header
         &:hover 
           color: variables.$yellow
           
-
-    
-      
+    .hamburger
+      background: none
+      color: white
+      border: none
+      font-size: 1rem
+      cursor: pointer
+      position: absolute
+      right: 10vw
+      display: none
+      @include mixins.mobile
+        display: block
+      @include mixins.tablet
+        display: block
+      @include mixins.laptop
+        display: block
+      &:hover
+        color: variables.$yellow  
+   
 
 
         
