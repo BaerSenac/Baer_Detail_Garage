@@ -9,6 +9,7 @@ header
   width: 100vw
   z-index: 1000
   
+  
   .menu 
     
     height: 6vh
@@ -18,26 +19,41 @@ header
     text-align: center
     justify-content: center
     
+    
     .navbar 
       width: 100%
       display: block
+      transition: transform 0.5s ease
       @include mixins.mobile
         display: none
+        height: 30vh
+        padding: 20px
+        background: variables.$fundo-header
+        transform: translateY(6vh) 
+        
+        
       @include mixins.tablet
         display: none
       @include mixins.laptop
         display: none
-      
-      a
-        color: variables.$white
-        font-size: .9rem
-        text-transform: uppercase
-        text-decoration: none
-        margin-right: 40px
-        font-weight: 400
-        transition: 0.4s
-        &:hover 
-          color: variables.$yellow
+      li
+        @include mixins.mobile
+          display: flex
+          flex-direction: column
+          align-items: center
+          gap: 30px 
+        a
+          color: variables.$white
+          font-size: .9rem
+          text-transform: uppercase
+          text-decoration: none
+          margin-right: 40px
+          font-weight: 400
+          transition: 0.4s
+
+
+          &:hover 
+            color: variables.$yellow
           
     .hamburger
       background: none
