@@ -23,24 +23,47 @@ header
     .navbar 
       width: 100%
       display: block
-      transition: transform 0.5s ease
+      
       @include mixins.mobile
         display: none
         height: 30vh
         padding: 20px
-        background: variables.$fundo-header
+        background: variables.$fundo-card
+        
         transform: translateY(6vh) 
+        animation: navbar .3s ease forwards
         
         
       @include mixins.tablet
         display: none
+        height: 30vh
+        padding: 20px
+        background: variables.$fundo-card
+        transform: translateY(6vh)
+        animation: navbar .3s ease forwards
       @include mixins.laptop
         display: none
+        height: 30vh
+        padding: 20px
+        background: variables.$fundo-card
+        transform: translateY(6vh)
+        animation: navbar .3s ease forwards
       li
+        transition: transform .5s ease
         @include mixins.mobile
           display: flex
           flex-direction: column
-          align-items: center
+          align-items: flex-end
+          gap: 30px 
+        @include mixins.tablet
+          display: flex
+          flex-direction: column
+          align-items: flex-end
+          gap: 30px 
+        @include mixins.laptop
+          display: flex
+          flex-direction: column
+          align-items: flex-end
           gap: 30px 
         a
           color: variables.$white
@@ -49,7 +72,7 @@ header
           text-decoration: none
           margin-right: 40px
           font-weight: 400
-          transition: 0.4s
+          transition: 0.4s ease
 
 
           &:hover 
