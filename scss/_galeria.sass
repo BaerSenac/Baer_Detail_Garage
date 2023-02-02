@@ -3,9 +3,9 @@
 @use 'keyframes'
 
 .galeria
-    height: 130vh
-    // @include mixins.mobile
-    //     height: 290vh
+    height: 100vh
+    @include mixins.mobile
+        height: 130vh
     .galeria-container
         background: variables.$fundo
         @include mixins.flex-center
@@ -13,7 +13,6 @@
         @include mixins.page
         filter: none
         .galeria-title
-            margin-top: 1rem
             @include mixins.title
             h1
                 font-size: 3rem
@@ -25,8 +24,9 @@
             justify-content: center
             grid-gap: 5px
             align-items: center
-            @include mixins.mobile  
-              grid-template-columns:  1fr   
+            @include mixins.mobile
+              grid-template-columns:  1fr 1fr 
+              gap: 2px 
             
             img
                 width: 300px
@@ -36,8 +36,9 @@
                 -webkit-transition: all 0.3s
                 transition: all 0.3s
                 @include mixins.mobile
-                    width: 200px
-                    height: 200px
+                    width: 150px
+                    height: 180px
+                    border-radius: 2px
                 &:hover
                     -moz-transform: scale(1.011)
                     -webkit-transform: scale(1.021)

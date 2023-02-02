@@ -5,7 +5,7 @@
 
 .after-before
     background: variables.$fundo-card
-    height: 80vh
+    height: 100vh
     display: flex
     justify-content: center
     align-items: center
@@ -15,14 +15,20 @@
     .after-container
         display: flex
         gap: 4rem
+        @include mixins.mobile
+            display: flex
+            flex-direction: column
+            align-items: center
         .after-content
             
             display: flex
             flex-direction: column
             align-items: flex-start
             justify-content: center
+            gap: 20px
             @include mixins.mobile
-                flex-direction: column-reverse
+                align-items: center
+            
             h1
                 color: variables.$yellow
                 font-size: 2rem
@@ -32,17 +38,23 @@
                 font-weight: 200
                 width: 500px
                 max-width: 500px
+                @include mixins.mobile
+                    width: 100vw
+                    padding: 10px
+                    font-size: 1rem
 
-            span
+            .text-cursor
                 display: inline-flex
                 color: variables.$yellow
-                gap: 30px
+                
                 i
                     -webkit-text-stroke: 1px 
                     -webkit-text-stroke-color: variables.$white
                     color: variables.$fundo
                     font-size: 2.5rem
                     animation: arrow 1s infinite
+                    @include mixins.mobile
+                        font-size: 1rem
             
             
 
@@ -52,6 +64,8 @@
             max-width: 400px 
             cursor: grab 
             border-radius: 5px
+            @include mixins.mobile
+                width: 200px
             img
                 max-width: 100% 
                 border-radius: 5px

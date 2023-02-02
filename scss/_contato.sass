@@ -3,21 +3,28 @@
 @use 'keyframes'
 
 .contato
+  height: 90vh
   .contato-container
     @include mixins.page
-    height: 90vh
+    
     background: variables.$yellow
-    display: flex
-    justify-content: center
-    align-items: center
+    @include mixins.flex-center
     gap: 5rem
+    @include mixins.mobile
+      flex-direction: column-reverse
     .contato-map
       iframe
         border-radius: 10px
+        @include mixins.mobile
+          width: 90vw
+          height: 40vh
     .contato-info
       display: flex
       flex-direction: column
       align-items: flex-start
+      @include mixins.mobile
+        justify-content: center
+        align-items: center
       h1
         font-size: 3rem
       span

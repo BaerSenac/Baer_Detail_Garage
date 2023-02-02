@@ -28,7 +28,7 @@ header
         display: none
         height: 30vh
         padding: 20px
-        background: variables.$fundo-card
+        background: variables.$yellow
         transform: translateY(6vh) 
         animation: navbar .3s ease forwards
         
@@ -58,6 +58,7 @@ header
         @include mixins.laptop
           @include mixins.flex-end
           gap: 30px 
+        
         a
           color: variables.$white
           font-size: .9rem
@@ -66,7 +67,9 @@ header
           margin-right: 40px
           font-weight: 400
           transition: 0.4s ease
-
+          @include mixins.mobile
+            color: variables.$black
+            font-weight: 500
 
           &:hover 
             color: variables.$yellow
