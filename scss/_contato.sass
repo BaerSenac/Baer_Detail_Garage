@@ -5,11 +5,11 @@
 .contato
   height: 90vh
   .contato-container
-    @include mixins.page
-    
     background: variables.$yellow
+    gap: 1rem
+
+    @include mixins.page
     @include mixins.flex-center
-    gap: 5rem
     @include mixins.mobile
       flex-direction: column-reverse
     .contato-map
@@ -27,6 +27,8 @@
         align-items: center
       h1
         font-size: 3rem
+        @include mixins.mobile
+          font-size: 2.5rem
       span
         font-size: 2rem
       .btn

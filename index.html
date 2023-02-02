@@ -17,11 +17,11 @@
       <div class="menu" >
         <nav class="navbar" id="navbar" >
           <li >
-            <a href="#home" onclick="clickMenu()">home</a>
-            <a href="#sobre" onclick="clickMenu()">Sobre</a>
-            <a href="#services" onclick="clickMenu()">Serviços</a>
-            <a href="#galery" onclick="clickMenu()">Galeria</a>
-            <a href="#contato" onclick="clickMenu()">Contato</a>
+            <a href="#home">home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#galery">Galeria</a>
+            <a href="#contato">Contato</a>
           </li>  
         </nav>
         <button class="hamburger" onclick="clickMenu()">
@@ -38,7 +38,7 @@
           <div class="home-content" data-aos="fade-left">
             <h2 class="home-title">Estética Automotiva</h2>
             <h1 class="home-subtitle">Baer Detail Garage</h1>
-            <button class="home-btn">Explore <span class="material-symbols-outlined">
+            <button class="home-btn" onclick="location.href='#sobre'">Explore <span class="material-symbols-outlined">
               arrow_right_alt
               </span></button>
           </div>
@@ -50,10 +50,10 @@
       
       <section class="sobre" id="sobre"><!-- section about -->
         <div class="sobre-content" ><!-- content about -->
-          <div class="sobre-img" data-aos="fade-right"> <!-- img -->
+          <div class="sobre-img" data-aos="fade-up"> <!-- img -->
             <img src="Img/baerGarage.png" alt="baer" >
           </div><!-- img -->
-          <div class="sobre-text" data-aos="fade-left"><!-- sobre text -->
+          <div class="sobre-text" data-aos="fade-up"><!-- sobre text -->
             <h1>Quem somos</h1>
             <h2>O que é o Baer Detail Garage</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quos alias asperiores earum ea cum ab sed voluptatum! Eum inventore sunt tempore architecto voluptatem distinctio eaque adipisci enim numquam illo?</p>
@@ -174,12 +174,12 @@
       
       <section class="after-before">
         <div class="after-container">
-          <div class="after-content" data-aos="fade-right">
+          <div class="after-content" data-aos="fade-up">
             <h1>Antes e Depois</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ab quisquam dolor ex commodi velit et molestias qui cupiditate incidunt, consequatur ratione nisi delectus nesciunt perspiciatis soluta provident. Neque, odio.</p>
-            <p class="text-cursor">Passe o mouse na imagem para revelar o antes e depois<i class="fa-solid fa-hand"></i></p>
+            <p class="text-cursor"> Passe o mouse ou clique na imagem para comparar<i class="fa-solid fa-hand"></i></p>
           </div>
-          <div class="antesDepois" data-aos="fade-left">
+          <div class="antesDepois" data-aos="fade-up">
              
             <img src="Img/img1.jpeg" alt="imagem 1" class="antes">
             <div class="depois" data-src="Img/img2.jpeg"></div>

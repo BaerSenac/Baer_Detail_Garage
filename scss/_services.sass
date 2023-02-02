@@ -8,7 +8,7 @@
         height: 100vh
         @include mixins.container
         @include mixins.mobile
-            height: 240vh
+            height: 280vh
         .services-title
             @include mixins.title
             h1
@@ -45,6 +45,7 @@
                 z-index: 100
                 @include mixins.mobile
                     width: 90vw
+                    height: 25vh
                     
                 @include mixins.tablet
                     width: 90vw
@@ -66,7 +67,8 @@
                     p
                         color: variables.$white
                         width: 240px
-
+                        @include mixins.mobile
+                            width: 70vw
 
                     a
                         background: variables.$yellow

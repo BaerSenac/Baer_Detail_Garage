@@ -4,16 +4,22 @@
 
 .galeria
     height: 100vh
+    background: variables.$fundo
+    @include mixins.flex-center
+    
     @include mixins.mobile
-        height: 130vh
+        height: 160vh
     .galeria-container
-        background: variables.$fundo
+        
         @include mixins.flex-center
+        justify-content: space-evenly
         flex-direction: column
-        @include mixins.page
         filter: none
+        gap: 30px
+        @include mixins.mobile
+            justify-content: space-evenly
         .galeria-title
-            @include mixins.title
+            
             h1
                 font-size: 3rem
                 color: variables.$yellow

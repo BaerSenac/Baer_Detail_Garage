@@ -18,7 +18,8 @@ header
     align-items: center
     text-align: center
     justify-content: center
-    
+    @include mixins.mobile
+      height: 10vh
     
     .navbar 
       width: 100%
@@ -26,10 +27,10 @@ header
       
       @include mixins.mobile
         display: none
-        height: 30vh
+        height: 40vh
         padding: 20px
         background: variables.$yellow
-        transform: translateY(6vh) 
+        transform: translateY(10vh) 
         animation: navbar .3s ease forwards
         
         
@@ -73,6 +74,8 @@ header
 
           &:hover 
             color: variables.$yellow
+            @include mixins.mobile
+              color: variables.$grey
           
     .hamburger
       background: none
