@@ -152,7 +152,7 @@ header .menu .navbar li a {
   transition: 0.4s ease;
 }
 header .menu .navbar li a:hover {
-  color: #ff8a00;
+  color: #ffae00;
 }
 header .menu .hamburger {
   background: none;
@@ -180,7 +180,7 @@ header .menu .hamburger {
   }
 }
 header .menu .hamburger:hover {
-  color: #ff8a00;
+  color: #ffae00;
 }
 
 .home {
@@ -207,40 +207,71 @@ header .menu .hamburger:hover {
 }
 .home .home-flex {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   gap: 30px;
   position: absolute;
   flex-direction: row-reverse;
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .home .home-flex {
+    flex-direction: column-reverse;
+  }
 }
 .home .home-flex .home-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+@media (min-width: 355px) and (max-width: 480px) {
+  .home .home-flex .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .home-flex .home-content .home-title {
+  margin: 0;
+  padding: 0;
   font-size: 3rem;
   font-weight: 500;
   color: #e6e4e4;
 }
-.home .home-flex .home-content p {
-  color: #a8a8a8;
-  font-size: 2rem;
+@media (min-width: 355px) and (max-width: 480px) {
+  .home .home-flex .home-content .home-title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .home .home-flex .home-content .home-title {
+    font-size: 2rem;
+  }
 }
 .home .home-flex .home-content .home-subtitle {
   font-size: 4rem;
   font-weight: 700;
-  background-image: linear-gradient(90deg, #ff8a00 31.77%, #ffc400 116.61%);
+  background-image: linear-gradient(90deg, #ffae00 31.77%, #ffc400 116.61%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (min-width: 355px) and (max-width: 480px) {
+  .home .home-flex .home-content .home-subtitle {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .home .home-flex .home-content .home-subtitle {
+    font-size: 2.1rem;
+  }
+}
 .home .home-flex .home-content .home-btn {
   background: #080808;
   font-size: 1.3rem;
-  color: #ff8a00;
-  border: 1px groove #ff8a00;
+  color: #ffae00;
+  border: 1px groove #ffae00;
   padding: 15px 40px;
   margin-top: 20px;
   font-weight: 400;
@@ -251,7 +282,7 @@ header .menu .hamburger:hover {
 }
 .home .home-flex .home-content .home-btn:hover {
   cursor: pointer;
-  background: #ff8a00;
+  background: #ffae00;
   color: #0a0a0a;
 }
 .home .home-flex .home-content .home-btn:hover span {
@@ -266,8 +297,8 @@ header .menu .hamburger:hover {
 .sobre {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: #131313;
 }
 .sobre .sobre-content {
@@ -277,22 +308,49 @@ header .menu .hamburger:hover {
   align-items: center;
   gap: 5rem;
 }
+@media (min-width: 355px) and (max-width: 480px) {
+  .sobre .sobre-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .sobre .sobre-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .sobre .sobre-content .sobre-img {
   overflow: hidden;
   border-radius: 5px;
 }
 .sobre .sobre-content .sobre-img img {
-  width: 23vw;
+  width: 25vw;
   border-radius: 5px;
   filter: saturate(105%) brightness(100%);
   max-width: 100%;
   transition: all 0.3s;
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .sobre .sobre-content .sobre-img img {
+    width: 83vw;
+  }
 }
 .sobre .sobre-content .sobre-img img:hover {
   transform: scale(1.1);
 }
 .sobre .sobre-content .sobre-text {
   max-width: 30vw;
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .sobre .sobre-content .sobre-text {
+    max-width: 90vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .sobre .sobre-content .sobre-text {
+    max-width: 90vw;
+  }
 }
 .sobre .sobre-content .sobre-text h1 {
   color: #e6e4e4;
@@ -313,21 +371,21 @@ header .menu .hamburger:hover {
 .sobre .sobre-content .sobre-text .sobre-btn {
   background: #080808;
   font-size: 1.3rem;
-  color: #ff8a00;
-  border: 1px groove #ff8a00;
+  color: #ffae00;
+  border: 1px groove #ffae00;
   padding: 15px 40px;
   margin-top: 20px;
   font-weight: 400;
   display: flex;
   gap: 6px;
   cursor: pointer;
-  background: #ff8a00;
+  background: #ffae00;
   color: #0a0a0a;
   cursor: pointer;
 }
 .sobre .sobre-content .sobre-text .sobre-btn:hover {
   background: #080808;
-  color: #ff8a00;
+  color: #ffae00;
 }
 
 .services .services-container {
@@ -336,6 +394,11 @@ header .menu .hamburger:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .services .services-container {
+    height: 240vh;
+  }
 }
 .services .services-container .services-title {
   display: flex;
@@ -353,7 +416,7 @@ header .menu .hamburger:hover {
 }
 .services .services-container .services-title h2 {
   font-size: 3rem;
-  color: #ff8a00;
+  color: #ffae00;
   margin-top: 10px;
 }
 .services .services-container .services-cards {
@@ -361,6 +424,16 @@ header .menu .hamburger:hover {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 50px;
   grid-gap: 1px;
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .services .services-container .services-cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .services .services-container .services-cards {
+    grid-template-columns: 1fr;
+  }
 }
 .services .services-container .services-cards .card {
   background: #131313;
@@ -374,6 +447,17 @@ header .menu .hamburger:hover {
   padding: 10px;
   gap: 3rem;
   transition: 1s all;
+  z-index: 100;
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .services .services-container .services-cards .card {
+    width: 90vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .services .services-container .services-cards .card {
+    width: 90vw;
+  }
 }
 .services .services-container .services-cards .card:hover {
   background: #2c2c2c;
@@ -386,14 +470,14 @@ header .menu .hamburger:hover {
   margin: 10px;
 }
 .services .services-container .services-cards .card .card-text h1 {
-  color: #ff8a00;
+  color: #ffae00;
 }
 .services .services-container .services-cards .card .card-text p {
   color: #e6e4e4;
   width: 240px;
 }
 .services .services-container .services-cards .card .card-text a {
-  background: #ff8a00;
+  background: #ffae00;
   color: #0a0a0a;
   padding: 7px 10px;
   margin-top: 10px;
@@ -405,6 +489,11 @@ header .menu .hamburger:hover {
 }
 .services .services-container .services-cards .card .card-img {
   overflow: hidden;
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .services .services-container .services-cards .card .card-img {
+    display: none;
+  }
 }
 .services .services-container .services-cards .card .card-img img {
   max-width: 130px;
@@ -423,30 +512,43 @@ header .menu .hamburger:hover {
   align-items: center;
   gap: 10rem;
 }
-.after-before .after-content {
-  gap: 21px;
+@media (min-width: 355px) and (max-width: 480px) {
+  .after-before {
+    height: 100vh;
+  }
+}
+.after-before .after-container {
+  display: flex;
+  gap: 4rem;
+}
+.after-before .after-container .after-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
 }
-.after-before .after-content h1 {
-  color: #ff8a00;
+@media (min-width: 355px) and (max-width: 480px) {
+  .after-before .after-container .after-content {
+    flex-direction: column-reverse;
+  }
+}
+.after-before .after-container .after-content h1 {
+  color: #ffae00;
   font-size: 2rem;
 }
-.after-before .after-content p {
+.after-before .after-container .after-content p {
   color: #e6e4e4;
   font-size: 1.2rem;
   font-weight: 200;
   width: 500px;
   max-width: 500px;
 }
-.after-before .after-content span {
+.after-before .after-container .after-content span {
   display: inline-flex;
-  color: #ff8a00;
+  color: #ffae00;
   gap: 30px;
 }
-.after-before .after-content span i {
+.after-before .after-container .after-content span i {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #e6e4e4;
   color: #080808;
@@ -454,7 +556,7 @@ header .menu .hamburger:hover {
   -webkit-animation: arrow 1s infinite;
           animation: arrow 1s infinite;
 }
-.after-before .antesDepois {
+.after-before .after-container .antesDepois {
   position: relative;
   width: 400px;
   max-width: 400px;
@@ -462,11 +564,11 @@ header .menu .hamburger:hover {
   cursor: grab;
   border-radius: 5px;
 }
-.after-before .antesDepois img {
+.after-before .after-container .antesDepois img {
   max-width: 100%;
   border-radius: 5px;
 }
-.after-before .antesDepois .depois {
+.after-before .after-container .antesDepois .depois {
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -483,9 +585,9 @@ header .menu .hamburger:hover {
 .galeria .galeria-container {
   background: #080808;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   height: 100vh;
   filter: none;
 }
@@ -500,7 +602,7 @@ header .menu .hamburger:hover {
 }
 .galeria .galeria-container .galeria-title h1 {
   font-size: 3rem;
-  color: #ff8a00;
+  color: #ffae00;
 }
 .galeria .galeria-container .galeria-img {
   display: grid;
@@ -509,11 +611,22 @@ header .menu .hamburger:hover {
   grid-gap: 5px;
   align-items: center;
 }
+@media (min-width: 355px) and (max-width: 480px) {
+  .galeria .galeria-container .galeria-img {
+    grid-template-columns: 1fr;
+  }
+}
 .galeria .galeria-container .galeria-img img {
   width: 300px;
   height: 330px;
   border-radius: 5px;
   transition: all 0.3s;
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .galeria .galeria-container .galeria-img img {
+    width: 200px;
+    height: 200px;
+  }
 }
 .galeria .galeria-container .galeria-img img:hover {
   -moz-transform: scale(1.011);
@@ -523,7 +636,7 @@ header .menu .hamburger:hover {
 .contato .contato-container {
   height: 100vh;
   height: 90vh;
-  background: #ff8a00;
+  background: #ffae00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -546,8 +659,8 @@ header .menu .hamburger:hover {
 .contato .contato-container .contato-info .btn {
   background: #080808;
   font-size: 1.3rem;
-  color: #ff8a00;
-  border: 1px groove #ff8a00;
+  color: #ffae00;
+  border: 1px groove #ffae00;
   padding: 15px 40px;
   margin-top: 20px;
   font-weight: 400;
@@ -556,7 +669,7 @@ header .menu .hamburger:hover {
   cursor: pointer;
 }
 .contato .contato-container .contato-info .btn:hover {
-  background: #ff8a00;
+  background: #ffae00;
   color: #080808;
   border: 1px solid #080808;
 }

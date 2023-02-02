@@ -4,9 +4,7 @@
 
 .sobre
   @include mixins.page
-  display: flex
-  align-items: center 
-  justify-content: center
+  @include mixins.flex-center
   background: variables.$fundo-card
   .sobre-content
     display: grid
@@ -14,18 +12,26 @@
     justify-items: end
     align-items: center
     gap: 5rem
+    @include mixins.mobile
+      display: flex
+      flex-direction: column-reverse
+    @include mixins.tablet
+      display: flex
+      flex-direction: column-reverse
    
     .sobre-img
       overflow: hidden
       border-radius: 5px
       img
-        width: 23vw
+        width: 25vw
         border-radius: 5px
         filter: saturate(105%) brightness(100%)
         max-width: 100%
         -moz-transition: all 0.3s
         -webkit-transition: all 0.3s
         transition: all 0.3s
+        @include mixins.mobile
+          width: 83vw
         &:hover
           -moz-transform: scale(1.1)
           -webkit-transform: scale(1.1)
@@ -34,7 +40,10 @@
 
     .sobre-text
       max-width: 30vw 
-
+      @include mixins.mobile
+        max-width: 90vw
+      @include mixins.tablet
+        max-width: 90vw
       h1
         color: variables.$white
         font-size: 3rem

@@ -16,38 +16,45 @@
       background-size: 200%
   
   .home-flex
-    display: flex
+    @include mixins.flex-center
     flex-wrap: wrap
     justify-content: space-between
-    align-items: center
     gap: 30px
     position: absolute
     flex-direction: row-reverse
-    
+    @include mixins.mobile
+      flex-direction: column-reverse
     // conteudo escrito
     .home-content
       display: flex
       flex-direction: column
       align-items: flex-start
+      @include mixins.mobile
+        @include mixins.flex-center
         
       .home-title
+        margin: 0
+        padding: 0
         font-size: 3rem
         font-weight: 500
         color: variables.$white
+        @include mixins.mobile
+          font-size: 2rem
+        @include mixins.tablet
+          font-size: 2rem
         
-      p
-        color: #a8a8a8
-        font-size: 2rem 
+    
 
       .home-subtitle
         font-size: 4rem
-        
         font-weight: 700
-        background-image: linear-gradient(90deg, #ff8a00 31.77%, #ffc400 116.61%)
+        background-image: linear-gradient(90deg, #ffae00 31.77%, #ffc400 116.61%)
         background-clip: text
-        
         -webkit-text-fill-color: transparent
-    
+        @include mixins.mobile
+          font-size: 2.1rem
+        @include mixins.tablet
+          font-size: 2.1rem
       .home-btn
         @include mixins.btn
         transition: .3s all
