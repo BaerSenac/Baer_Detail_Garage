@@ -80,7 +80,7 @@ header .menu {
 }
 @media (min-width: 355px) and (max-width: 480px) {
   header .menu {
-    height: 10vh;
+    height: 7vh;
   }
 }
 header .menu .navbar {
@@ -93,7 +93,7 @@ header .menu .navbar {
     height: 40vh;
     padding: 20px;
     background: #ffae00;
-    transform: translateY(10vh);
+    transform: translateY(7vh);
     -webkit-animation: navbar 0.3s ease forwards;
             animation: navbar 0.3s ease forwards;
   }
@@ -418,7 +418,7 @@ header .menu .hamburger:hover {
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .services .services-container {
-    height: 280vh;
+    height: 290vh;
   }
 }
 .services .services-container .services-title {
@@ -564,6 +564,7 @@ header .menu .hamburger:hover {
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .after-before .after-container .after-content {
+    display: flex;
     align-items: center;
   }
 }
@@ -713,7 +714,7 @@ header .menu .hamburger:hover {
 @media (min-width: 355px) and (max-width: 480px) {
   .contato .contato-container .contato-map iframe {
     width: 90vw;
-    height: 40vh;
+    height: 30vh;
   }
 }
 .contato .contato-container .contato-info {
