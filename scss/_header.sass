@@ -20,6 +20,8 @@ header
     justify-content: center
     @include mixins.mobile
       height: 7vh
+    @include mixins.tablet
+      height: 7vh
     
     .navbar 
       width: 100%
@@ -36,17 +38,17 @@ header
         
       @include mixins.tablet
         display: none
-        height: 30vh
+        height: 40vh
         padding: 20px
-        background: variables.$fundo-card
-        transform: translateY(6vh)
+        background: variables.$yellow
+        transform: translateY(7vh)
         animation: navbar .3s ease forwards
       @include mixins.laptop
         display: none
         height: 30vh
         padding: 20px
         background: variables.$fundo-card
-        transform: translateY(6vh)
+        transform: translateY(7vh)
         animation: navbar .3s ease forwards
       li
         transition: transform .5s ease
@@ -71,10 +73,15 @@ header
           @include mixins.mobile
             color: variables.$black
             font-weight: 500
+          @include mixins.tablet
+            color: variables.$black
+            font-weight: 500
 
           &:hover 
             color: variables.$yellow
             @include mixins.mobile
+              color: variables.$grey
+            @include mixins.tablet
               color: variables.$grey
           
     .hamburger

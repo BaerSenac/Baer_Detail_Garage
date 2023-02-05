@@ -83,6 +83,11 @@ header .menu {
     height: 7vh;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  header .menu {
+    height: 7vh;
+  }
+}
 header .menu .navbar {
   width: 100%;
   display: block;
@@ -101,10 +106,10 @@ header .menu .navbar {
 @media (min-width: 481px) and (max-width: 768px) {
   header .menu .navbar {
     display: none;
-    height: 30vh;
+    height: 40vh;
     padding: 20px;
-    background: #131313;
-    transform: translateY(6vh);
+    background: #ffae00;
+    transform: translateY(7vh);
     -webkit-animation: navbar 0.3s ease forwards;
             animation: navbar 0.3s ease forwards;
   }
@@ -115,7 +120,7 @@ header .menu .navbar {
     height: 30vh;
     padding: 20px;
     background: #131313;
-    transform: translateY(6vh);
+    transform: translateY(7vh);
     -webkit-animation: navbar 0.3s ease forwards;
             animation: navbar 0.3s ease forwards;
   }
@@ -162,10 +167,21 @@ header .menu .navbar li a {
     font-weight: 500;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  header .menu .navbar li a {
+    color: #0a0a0a;
+    font-weight: 500;
+  }
+}
 header .menu .navbar li a:hover {
   color: #ffae00;
 }
 @media (min-width: 355px) and (max-width: 480px) {
+  header .menu .navbar li a:hover {
+    color: #9b9a9a;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
   header .menu .navbar li a:hover {
     color: #9b9a9a;
   }
@@ -221,6 +237,11 @@ header .menu .hamburger:hover {
     background-size: 200%;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .home .home-img {
+    background-size: 200%;
+  }
+}
 .home .home-flex {
   display: flex;
   justify-content: center;
@@ -232,6 +253,11 @@ header .menu .hamburger:hover {
   flex-direction: row-reverse;
 }
 @media (min-width: 355px) and (max-width: 480px) {
+  .home .home-flex {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
   .home .home-flex {
     flex-direction: column-reverse;
   }
@@ -355,6 +381,11 @@ header .menu .hamburger:hover {
 @media (min-width: 355px) and (max-width: 480px) {
   .sobre .sobre-content .sobre-img img {
     width: 83vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .sobre .sobre-content .sobre-img img {
+    width: 90vw;
   }
 }
 .sobre .sobre-content .sobre-img img:hover {
