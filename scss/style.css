@@ -2,20 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@-webkit-keyframes scaleLogo {
-  0% {
-    transform: scale(1.032);
-    transition: 1s ease;
-  }
-  50% {
-    transform: scale(1.052);
-    transition: 1s ease;
-  }
-  100% {
-    transform: scale(1.032);
-    transition: 1s ease;
-  }
-}
 @keyframes scaleLogo {
   0% {
     transform: scale(1.032);
@@ -30,28 +16,12 @@
     transition: 1s ease;
   }
 }
-@-webkit-keyframes arrow {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(7px);
-  }
-}
 @keyframes arrow {
   0% {
     transform: translateX(0px);
   }
   100% {
     transform: translateX(7px);
-  }
-}
-@-webkit-keyframes navbar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100vw;
   }
 }
 @keyframes navbar {
@@ -95,12 +65,11 @@ header .menu .navbar {
 @media (min-width: 355px) and (max-width: 480px) {
   header .menu .navbar {
     display: none;
-    height: 40vh;
+    height: 35vh;
     padding: 20px;
     background: #ffae00;
     transform: translateY(7vh);
-    -webkit-animation: navbar 0.3s ease forwards;
-            animation: navbar 0.3s ease forwards;
+    animation: navbar 0.3s ease forwards;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -110,8 +79,7 @@ header .menu .navbar {
     padding: 20px;
     background: #ffae00;
     transform: translateY(7vh);
-    -webkit-animation: navbar 0.3s ease forwards;
-            animation: navbar 0.3s ease forwards;
+    animation: navbar 0.3s ease forwards;
   }
 }
 @media (min-width: 769px) and (max-width: 900px) {
@@ -121,8 +89,7 @@ header .menu .navbar {
     padding: 20px;
     background: #131313;
     transform: translateY(7vh);
-    -webkit-animation: navbar 0.3s ease forwards;
-            animation: navbar 0.3s ease forwards;
+    animation: navbar 0.3s ease forwards;
   }
 }
 header .menu .navbar li {
@@ -229,6 +196,7 @@ header .menu .hamburger:hover {
   background-size: 100%;
   filter: contrast(50%) brightness(15%);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
 }
@@ -329,8 +297,7 @@ header .menu .hamburger:hover {
 }
 .home .home-flex .home-content .home-btn:hover span {
   position: relative;
-  -webkit-animation: arrow 0.4s forwards ease;
-          animation: arrow 0.4s forwards ease;
+  animation: arrow 0.4s forwards ease;
 }
 .home .home-flex .img .logoBaer {
   width: 350px;
@@ -345,7 +312,7 @@ header .menu .hamburger:hover {
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .sobre {
-    height: 120vh;
+    height: 143vh;
   }
 }
 .sobre .sobre-content {
@@ -380,7 +347,7 @@ header .menu .hamburger:hover {
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .sobre .sobre-content .sobre-img img {
-    width: 83vw;
+    width: 90vw;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -438,6 +405,19 @@ header .menu .hamburger:hover {
 .sobre .sobre-content .sobre-text .sobre-btn:hover {
   background: #080808;
   color: #ffae00;
+}
+.sobre .sobre-content .sobre-text img {
+  margin-top: 10rem;
+  width: 600px;
+  rotate: -20deg;
+  filter: grayscale(100%);
+}
+@media (min-width: 355px) and (max-width: 480px) {
+  .sobre .sobre-content .sobre-text img {
+    width: 90vw;
+    rotate: none;
+    margin-top: 5rem;
+  }
 }
 
 .services .services-container {
@@ -572,7 +552,7 @@ header .menu .hamburger:hover {
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .after-before {
-    height: 130vh;
+    height: 90vh;
   }
 }
 .after-before .after-container {
@@ -603,6 +583,11 @@ header .menu .hamburger:hover {
   color: #ffae00;
   font-size: 2rem;
 }
+@media (min-width: 355px) and (max-width: 480px) {
+  .after-before .after-container .after-content h1 {
+    font-size: 2.4rem;
+  }
+}
 .after-before .after-container .after-content p {
   color: #e6e4e4;
   font-size: 1.2rem;
@@ -626,8 +611,7 @@ header .menu .hamburger:hover {
   -webkit-text-stroke-color: #e6e4e4;
   color: #080808;
   font-size: 2.5rem;
-  -webkit-animation: arrow 1s infinite;
-          animation: arrow 1s infinite;
+  animation: arrow 1s infinite;
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .after-before .after-container .after-content .text-cursor i {
@@ -638,13 +622,12 @@ header .menu .hamburger:hover {
   position: relative;
   width: 400px;
   max-width: 400px;
-  cursor: -webkit-grab;
   cursor: grab;
   border-radius: 5px;
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .after-before .after-container .antesDepois {
-    width: 200px;
+    width: 80vw;
   }
 }
 .after-before .after-container .antesDepois img {
@@ -696,19 +679,19 @@ header .menu .hamburger:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
-  grid-gap: 5px;
+  grid-gap: 10px;
   align-items: center;
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .galeria .galeria-container .galeria-img {
     grid-template-columns: 1fr 1fr;
-    gap: 2px;
+    gap: 5px;
   }
 }
 .galeria .galeria-container .galeria-img img {
-  width: 300px;
-  height: 330px;
-  border-radius: 5px;
+  width: 240px;
+  height: 300px;
+  border-radius: 3px;
   transition: all 0.3s;
 }
 @media (min-width: 355px) and (max-width: 480px) {
@@ -814,7 +797,6 @@ html, body {
   scroll-behavior: smooth;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   background: #080808;
   font-family: "Ubuntu", sans-serif;

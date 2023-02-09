@@ -6,7 +6,7 @@
   @include mixins.page
   @include mixins.flex-center
   @include mixins.mobile
-    height: 120vh
+    height: 143vh
   background: variables.$fundo-card
   .sobre-content
     display: grid
@@ -33,7 +33,7 @@
         -webkit-transition: all 0.3s
         transition: all 0.3s
         @include mixins.mobile
-          width: 83vw
+          width: 90vw
         @include mixins.tablet
           width: 90vw
         &:hover
@@ -73,8 +73,15 @@
           background: variables.$fundo
           color: variables.$yellow
           
-        
-        
+      img
+        margin-top: 10rem
+        width: 600px
+        rotate: (-20deg)
+        filter: grayscale(100%)
+        @include mixins.mobile
+          width: 90vw
+          rotate: none
+          margin-top: 5rem
     
      
         

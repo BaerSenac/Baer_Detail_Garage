@@ -34,6 +34,7 @@
   background-size: 100%
   filter: contrast(50%) brightness(15%)
   background-repeat: no-repeat
+  background-attachment: fixed
   
 @mixin container
   display: flex
@@ -47,14 +48,21 @@
   background: variables.$fundo
   width: 100%
   padding: 60px
-  
 
+
+// Smartphone com resolucao de 355px ate 480px
 $mobile: 355px
 $mobile-medio: 480px
+
+// Smartphone & Tablets com resolucao de 481px ate 768px
 $tablet: 481px
 $tablet-medio: 768px
+
+// Telas laptop com resulocao de 769px - 900px
 $laptop: 769px
 $laptop-medio: 900px
+
+// Telas laptop ou maiores com resulocao de 901px - 1200px
 $desktop: 901px
 $desktop-medio: 1024px
 $desktop-large: 1200px
