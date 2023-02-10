@@ -20,6 +20,7 @@ header
     justify-content: center
     @include mixins.mobile
       height: 7vh
+      
     @include mixins.tablet
       height: 7vh
     
@@ -31,9 +32,12 @@ header
         display: none
         height: 35vh
         padding: 20px
-        background: variables.$yellow
+        background: #ffae00e0
+        border-radius: 0 0 10px 10px 
+        
         transform: translateY(7vh) 
         animation: navbar .3s ease forwards
+        
         
         
       @include mixins.tablet
@@ -41,6 +45,7 @@ header
         height: 40vh
         padding: 20px
         background: variables.$yellow
+        
         transform: translateY(7vh)
         animation: navbar .3s ease forwards
       @include mixins.laptop
@@ -73,6 +78,7 @@ header
           transition: 0.4s ease
           @include mixins.mobile
             color: variables.$black
+            
             font-weight: 500
           @include mixins.tablet
             color: variables.$black

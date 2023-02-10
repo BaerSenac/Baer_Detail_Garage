@@ -67,7 +67,8 @@ header .menu .navbar {
     display: none;
     height: 35vh;
     padding: 20px;
-    background: #ffae00;
+    background: rgba(255, 174, 0, 0.8784313725);
+    border-radius: 0 0 10px 10px;
     transform: translateY(7vh);
     animation: navbar 0.3s ease forwards;
   }
@@ -278,7 +279,7 @@ header .menu .hamburger:hover {
   }
 }
 .home .home-flex .home-content .home-btn {
-  background: #080808;
+  background: #131313;
   font-size: 1.3rem;
   color: #ffae00;
   border: 1px groove #ffae00;
@@ -288,7 +289,7 @@ header .menu .hamburger:hover {
   display: flex;
   gap: 6px;
   cursor: pointer;
-  transition: 0.3s all;
+  transition: 0.2s ease;
 }
 .home .home-flex .home-content .home-btn:hover {
   cursor: pointer;
@@ -388,7 +389,7 @@ header .menu .hamburger:hover {
   font-weight: 300;
 }
 .sobre .sobre-content .sobre-text .sobre-btn {
-  background: #080808;
+  background: #131313;
   font-size: 1.3rem;
   color: #ffae00;
   border: 1px groove #ffae00;
@@ -401,9 +402,10 @@ header .menu .hamburger:hover {
   background: #ffae00;
   color: #0a0a0a;
   cursor: pointer;
+  transition: 0.2s ease;
 }
 .sobre .sobre-content .sobre-text .sobre-btn:hover {
-  background: #080808;
+  background: none;
   color: #ffae00;
 }
 .sobre .sobre-content .sobre-text img {
@@ -437,7 +439,6 @@ header .menu .hamburger:hover {
   flex-direction: column;
   align-items: center;
   background: #080808;
-  width: 100%;
   padding: 60px;
 }
 .services .services-container .services-title h1 {
@@ -552,7 +553,7 @@ header .menu .hamburger:hover {
 }
 @media (min-width: 355px) and (max-width: 480px) {
   .after-before {
-    height: 90vh;
+    height: 120vh;
   }
 }
 .after-before .after-container {
@@ -754,7 +755,7 @@ header .menu .hamburger:hover {
   font-size: 2rem;
 }
 .contato .contato-container .contato-info .btn {
-  background: #080808;
+  background: #131313;
   font-size: 1.3rem;
   color: #ffae00;
   border: 1px groove #ffae00;
