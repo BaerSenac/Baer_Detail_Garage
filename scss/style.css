@@ -216,7 +216,7 @@ header .menu .hamburger:hover {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10px;
   position: absolute;
   flex-direction: row-reverse;
 }
@@ -274,7 +274,7 @@ header .menu .hamburger:hover {
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .home .home-flex .home-content .home-subtitle {
-    font-size: 2.1rem;
+    font-size: 3rem;
   }
 }
 .home .home-flex .home-content .home-btn {
