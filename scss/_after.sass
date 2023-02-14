@@ -11,14 +11,14 @@
     align-items: center
     gap: 10rem
     @include mixins.mobile
-        height: 120vh
+        height: 140vh
     .after-container
         display: flex
         gap: 4rem
         @include mixins.mobile
-            display: flex
-            flex-direction: column
-            align-items: center
+            @include mixins.flex-column
+        @include mixins.tablet
+            @include mixins.flex-column
         .after-content
             
             display: flex

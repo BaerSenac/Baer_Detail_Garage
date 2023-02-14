@@ -8,7 +8,7 @@
     @include mixins.flex-center
     
     @include mixins.mobile
-        height: 160vh
+        height: 150vh
     .galeria-container
         
         @include mixins.flex-center
@@ -31,6 +31,9 @@
             grid-gap: 10px
             align-items: center
             @include mixins.mobile
+              grid-template-columns:  1fr 1fr 
+              gap: 5px 
+            @include mixins.tablet
               grid-template-columns:  1fr 1fr 
               gap: 5px 
             

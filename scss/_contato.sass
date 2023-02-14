@@ -12,10 +12,15 @@
     @include mixins.flex-center
     @include mixins.mobile
       flex-direction: column-reverse
+    @include mixins.tablet
+      flex-direction: column-reverse
     .contato-map
       iframe
         border-radius: 10px
         @include mixins.mobile
+          width: 90vw
+          height: 30vh
+        @include mixins.tablet
           width: 90vw
           height: 30vh
     .contato-info

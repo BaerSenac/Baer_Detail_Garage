@@ -5,9 +5,12 @@
 .sobre
   @include mixins.page
   @include mixins.flex-center
+  background: variables.$fundo-card
   @include mixins.mobile
     height: 143vh
-  background: variables.$fundo-card
+  @include mixins.tablet
+    height: 143vh
+  
   .sobre-content
     display: grid
     grid-template-columns: 1fr 1fr
@@ -83,7 +86,8 @@
           width: 90vw
           rotate: none
           margin-top: 5rem
-    
+        @include mixins.tablet
+          width: 90vw
      
         
         

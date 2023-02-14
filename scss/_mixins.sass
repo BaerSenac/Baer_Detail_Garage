@@ -28,6 +28,10 @@
   flex-direction: column
   align-items: flex-end
   
+@mixin flex-column
+  display: flex
+  flex-direction: column
+  align-items: center
 
 @mixin bg-img($img)
   background-image: url('../Img/#{$img}')
@@ -35,7 +39,7 @@
   background-size: 100%
   filter: contrast(50%) brightness(15%)
   background-repeat: no-repeat
-  background-attachment: fixed
+  
   
 @mixin container
   display: flex
@@ -52,7 +56,7 @@
 
 
 // Smartphone com resolucao de 355px ate 480px
-$mobile: 355px
+$mobile: 300px
 $mobile-medio: 480px
 
 // Smartphone & Tablets com resolucao de 481px ate 768px
