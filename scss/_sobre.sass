@@ -72,7 +72,7 @@
         background: variables.$yellow
         color: variables.$black
         cursor: pointer
-        transition: .2s ease
+        
         &:hover
           background: none
           color: variables.$yellow
@@ -82,6 +82,7 @@
         width: 600px
         rotate: (-20deg)
         filter: grayscale(100%)
+        transition: .5s cubic-bezier(0.42, 0, 0.21, 0.68)
         @include mixins.mobile
           width: 90vw
           rotate: none
@@ -89,7 +90,9 @@
         @include mixins.tablet
           width: 90vw
      
-        
+        &:hover
+          transition: .5s ease
+          filter: none
         
     
       

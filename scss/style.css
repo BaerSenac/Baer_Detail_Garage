@@ -291,6 +291,9 @@ header .menu .hamburger:hover {
   transition: 0.2s ease;
 }
 .home .home-flex .home-content .home-btn:hover {
+  transition: 0.3s cubic-bezier(0.42, 0, 0.21, 0.68);
+}
+.home .home-flex .home-content .home-btn:hover {
   cursor: pointer;
   background: #ffae00;
   color: #0a0a0a;
@@ -406,7 +409,9 @@ header .menu .hamburger:hover {
   background: #ffae00;
   color: #0a0a0a;
   cursor: pointer;
-  transition: 0.2s ease;
+}
+.sobre .sobre-content .sobre-text .sobre-btn:hover {
+  transition: 0.3s cubic-bezier(0.42, 0, 0.21, 0.68);
 }
 .sobre .sobre-content .sobre-text .sobre-btn:hover {
   background: none;
@@ -417,6 +422,7 @@ header .menu .hamburger:hover {
   width: 600px;
   rotate: -20deg;
   filter: grayscale(100%);
+  transition: 0.5s cubic-bezier(0.42, 0, 0.21, 0.68);
 }
 @media (min-width: 300px) and (max-width: 480px) {
   .sobre .sobre-content .sobre-text img {
@@ -429,6 +435,10 @@ header .menu .hamburger:hover {
   .sobre .sobre-content .sobre-text img {
     width: 90vw;
   }
+}
+.sobre .sobre-content .sobre-text img:hover {
+  transition: 0.5s ease;
+  filter: none;
 }
 
 .services .services-container {
@@ -800,6 +810,9 @@ header .menu .hamburger:hover {
   cursor: pointer;
 }
 .contato .contato-container .contato-info .btn:hover {
+  transition: 0.3s cubic-bezier(0.42, 0, 0.21, 0.68);
+}
+.contato .contato-container .contato-info .btn:hover {
   background: #ffae00;
   color: #080808;
   border: 1px solid #080808;
@@ -815,6 +828,7 @@ header .menu .hamburger:hover {
   padding: 15px 15px;
   font-size: 1.6rem;
   color: #080808;
+  transition: 0.3s cubic-bezier(0.42, 0, 0.21, 0.68);
 }
 .contato .contato-container .contato-info .contato-social i:hover {
   color: #e6e4e4;
