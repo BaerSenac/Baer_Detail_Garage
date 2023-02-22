@@ -691,7 +691,7 @@ header .menu .hamburger:hover {
   justify-content: space-evenly;
   flex-direction: column;
   filter: none;
-  gap: 30px;
+  gap: 50px;
 }
 @media (min-width: 300px) and (max-width: 480px) {
   .galeria .galeria-container {
@@ -706,7 +706,7 @@ header .menu .hamburger:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
-  grid-gap: 10px;
+  grid-gap: 5px;
   align-items: center;
 }
 @media (min-width: 300px) and (max-width: 480px) {
@@ -744,7 +744,7 @@ header .menu .hamburger:hover {
 }
 .contato .contato-container {
   background: #ffae00;
-  gap: 1rem;
+  gap: 2rem;
   height: 100vh;
   display: flex;
   justify-content: center;
