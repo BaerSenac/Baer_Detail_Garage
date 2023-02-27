@@ -12,6 +12,9 @@
     gap: 10rem
     @include mixins.mobile
         height: 140vh
+    @include mixins.tablet
+        height: 140vh
+    
     .after-container
         display: flex
         gap: 4rem
@@ -19,6 +22,7 @@
             @include mixins.flex-column
         @include mixins.tablet
             @include mixins.flex-column
+        
         .after-content
             
             display: flex
@@ -32,8 +36,13 @@
             h1
                 color: variables.$yellow
                 font-size: 2rem
+                
                 @include mixins.mobile
                     font-size: 2.4rem
+                @include mixins.tablet
+                    font-size: 2rem
+                    padding: 10px
+                
             p
                 color: variables.$white
                 font-size: 1.2rem
@@ -41,6 +50,10 @@
                 width: 500px
                 max-width: 500px
                 @include mixins.mobile
+                    width: 100vw
+                    padding: 10px
+                    font-size: 1rem
+                @include mixins.tablet
                     width: 100vw
                     padding: 10px
                     font-size: 1rem

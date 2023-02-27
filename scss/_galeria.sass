@@ -9,6 +9,8 @@
     
     @include mixins.mobile
         height: 150vh
+    @include mixins.tablet
+        height: 200vh
     .galeria-container
         
         @include mixins.flex-center
@@ -47,6 +49,9 @@
                 @include mixins.mobile
                     width: 150px
                     height: 180px
+                    border-radius: 2px
+                @include mixins.tablet
+                    width: 200px
                     border-radius: 2px
                 &:hover
                     -moz-transform: scale(1.011)

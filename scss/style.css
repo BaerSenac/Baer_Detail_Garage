@@ -453,6 +453,11 @@ header .menu .hamburger:hover {
     height: 290vh;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .services .services-container {
+    height: 270vh;
+  }
+}
 .services .services-container .services-title {
   display: flex;
   flex-direction: column;
@@ -575,6 +580,11 @@ header .menu .hamburger:hover {
     height: 140vh;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .after-before {
+    height: 140vh;
+  }
+}
 .after-before .after-container {
   display: flex;
   gap: 4rem;
@@ -615,6 +625,12 @@ header .menu .hamburger:hover {
     font-size: 2.4rem;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .after-before .after-container .after-content h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+}
 .after-before .after-container .after-content p {
   color: #e6e4e4;
   font-size: 1.2rem;
@@ -623,6 +639,13 @@ header .menu .hamburger:hover {
   max-width: 500px;
 }
 @media (min-width: 300px) and (max-width: 480px) {
+  .after-before .after-container .after-content p {
+    width: 100vw;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
   .after-before .after-container .after-content p {
     width: 100vw;
     padding: 10px;
@@ -684,6 +707,11 @@ header .menu .hamburger:hover {
     height: 150vh;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .galeria {
+    height: 200vh;
+  }
+}
 .galeria .galeria-container {
   display: flex;
   justify-content: center;
@@ -731,6 +759,12 @@ header .menu .hamburger:hover {
   .galeria .galeria-container .galeria-img img {
     width: 150px;
     height: 180px;
+    border-radius: 2px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .galeria .galeria-container .galeria-img img {
+    width: 200px;
     border-radius: 2px;
   }
 }
