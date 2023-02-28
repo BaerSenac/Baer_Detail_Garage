@@ -39,8 +39,8 @@
                 flex-direction: row
                 align-items: center
                 margin: 5px
-                width: 25vw
-                height: 21vh
+                width: 30vw
+                height: 26vh
                 padding: 10px
                 gap: 3rem
                 transition: 1s all
@@ -64,10 +64,12 @@
                     
             
                     h1
+                        font-size: 1.5em
                         color: variables.$yellow
 
                     p
                         color: variables.$white
+                        font-size: 1em
                         width: 240px
                         @include mixins.mobile
                             width: 70vw
@@ -86,8 +88,9 @@
                     @include mixins.mobile
                         display: none
                     img
-                        max-width: 130px
-                        border-radius: 5px
+                        width: 180px
+                        height: 240px
+                        border-radius: 1px
                         -moz-transition: all 0.3s
                         -webkit-transition: all 0.3s
                         transition: all 0.3s
