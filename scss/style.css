@@ -735,7 +735,7 @@ header .menu .hamburger:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
-  grid-gap: 5px;
+  grid-gap: 30px;
   align-items: center;
 }
 @media (min-width: 300px) and (max-width: 480px) {
@@ -751,8 +751,8 @@ header .menu .hamburger:hover {
   }
 }
 .galeria .galeria-container .galeria-img img {
-  width: 240px;
-  height: 300px;
+  width: 220px;
+  height: 280px;
   border-radius: 3px;
   transition: all 0.3s;
 }
