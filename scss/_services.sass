@@ -35,8 +35,8 @@
             .card
                 background: variables.$fundo-card
                 display: flex
-                justify-content: space-between
-                flex-direction: row
+                justify-content: flex-end
+                flex-direction: colum-reverse
                 align-items: center
                 margin: 5px
                 
@@ -69,7 +69,7 @@
                     p
                         color: variables.$white
                         font-size: .9em
-                        width: 200px
+                        width: 240px
                         @include mixins.mobile
                             width: 70vw
 
@@ -87,7 +87,7 @@
                     @include mixins.mobile
                         display: none
                     img
-                        width: 150px
+                        width: 160px
                         height: 200px
                         border-radius: 1px
                         -moz-transition: all 0.3s

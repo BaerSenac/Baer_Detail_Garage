@@ -495,8 +495,8 @@ header .menu .hamburger:hover {
 .services .services-container .services-cards .card {
   background: #131313;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: colum-reverse;
   align-items: center;
   margin: 5px;
   gap: 3rem;
@@ -532,7 +532,7 @@ header .menu .hamburger:hover {
 .services .services-container .services-cards .card .card-text p {
   color: #e6e4e4;
   font-size: 0.9em;
-  width: 200px;
+  width: 240px;
 }
 @media (min-width: 300px) and (max-width: 480px) {
   .services .services-container .services-cards .card .card-text p {
@@ -559,7 +559,7 @@ header .menu .hamburger:hover {
   }
 }
 .services .services-container .services-cards .card .card-img img {
-  width: 150px;
+  width: 160px;
   height: 200px;
   border-radius: 1px;
   transition: all 0.3s;
