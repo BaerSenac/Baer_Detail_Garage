@@ -57,5 +57,14 @@
                     -moz-transform: scale(1.011)
                     -webkit-transform: scale(1.021)
                     
-  
+        .galeria-btn
+
+            .home-btn
+                @include mixins.btn
+                background: none
+                display: inline
+                gap: 10px
+                &:hover
+                    background: variables.$yellow
+                    color: variables.$black
                 

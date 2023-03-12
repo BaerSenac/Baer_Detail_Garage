@@ -673,8 +673,8 @@ header .menu .hamburger:hover {
   position: relative;
   width: 400px;
   max-width: 400px;
-  cursor: grab;
-  border-radius: 5px;
+  cursor: w-resize;
+  border-radius: 2px;
 }
 @media (min-width: 300px) and (max-width: 480px) {
   .after-before .after-container .antesDepois {
@@ -683,10 +683,10 @@ header .menu .hamburger:hover {
 }
 .after-before .after-container .antesDepois img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .after-before .after-container .antesDepois .depois {
-  border-radius: 5px;
+  border-radius: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -772,6 +772,28 @@ header .menu .hamburger:hover {
 .galeria .galeria-container .galeria-img img:hover {
   -moz-transform: scale(1.011);
   -webkit-transform: scale(1.021);
+}
+.galeria .galeria-container .galeria-btn .home-btn {
+  background: #131313;
+  font-size: 1.3rem;
+  color: #ffae00;
+  border: 1px groove #ffae00;
+  padding: 15px 40px;
+  margin-top: 20px;
+  font-weight: 400;
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
+  background: none;
+  display: inline;
+  gap: 10px;
+}
+.galeria .galeria-container .galeria-btn .home-btn:hover {
+  transition: 0.3s cubic-bezier(0.42, 0, 0.21, 0.68);
+}
+.galeria .galeria-container .galeria-btn .home-btn:hover {
+  background: #ffae00;
+  color: #0a0a0a;
 }
 
 .contato {
