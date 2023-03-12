@@ -35,13 +35,11 @@
             .card
                 background: variables.$fundo-card
                 display: flex
-                justify-content: center
+                justify-content: space-between
                 flex-direction: row
                 align-items: center
                 margin: 5px
-                width: 30vw
-                height: 26vh
-                padding: 10px
+                
                 gap: 3rem
                 transition: 1s all
                 z-index: 100
@@ -64,13 +62,14 @@
                     
             
                     h1
-                        font-size: 1.5em
+                        font-size: 1.4em
+                        margin-bottom: 10px
                         color: variables.$yellow
 
                     p
                         color: variables.$white
-                        font-size: 1em
-                        width: 240px
+                        font-size: .9em
+                        width: 200px
                         @include mixins.mobile
                             width: 70vw
 
@@ -88,8 +87,8 @@
                     @include mixins.mobile
                         display: none
                     img
-                        width: 180px
-                        height: 240px
+                        width: 150px
+                        height: 200px
                         border-radius: 1px
                         -moz-transition: all 0.3s
                         -webkit-transition: all 0.3s
